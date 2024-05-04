@@ -265,5 +265,6 @@ nextQuestionBtn.addEventListener("click", () => {
 function goToNextQuestion() {
   stopCountDown();
   currentQuestionIndex++;
+  reveledAnswer = false;
   populateQuestions(questionSet);
 }
