@@ -63,6 +63,11 @@ function pauseSound(sound) {
 
 themeToggler.addEventListener("click", () => {
   document.documentElement.classList.toggle("dark");
+  if (document.documentElement.classList.contains("dark")) {
+    themeToggler.textContent = "Switch to Light Mode";
+  } else {
+    themeToggler.textContent = "Switch to Dark Mode";
+  }
 });
 
 //fetching data
